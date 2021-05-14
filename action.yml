@@ -4,10 +4,10 @@ branding:
   icon: 'award'  
   color: 'green'
 inputs:
-  args1: # id of input
-    description: 'args1'
+  who-to-greet: # id of input
+    description: 'who to greet'
     required: true
-    default: 'even'
+    default: 'wxdlong'
 outputs:
   time:
     description: 'The time we greeted you'
@@ -22,4 +22,4 @@ runs:
       shell: bash
       run: |
         chmod +x $GITHUB_ACTION_PATH/entrypoint.sh
-        $GITHUB_ACTION_PATH/entrypoint.sh $args1
+        $GITHUB_ACTION_PATH/entrypoint.sh ${{ inputs.who-to-greet }}
