@@ -20,4 +20,6 @@ runs:
   steps:
     - name: Run Script
       shell: bash
-      run: ls $GITHUB_ACTION_PATH/entrypoint.sh
+      run: |
+        chmod +x $GITHUB_ACTION_PATH/entrypoint.sh
+        $GITHUB_ACTION_PATH/entrypoint.sh song
