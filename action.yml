@@ -1,16 +1,16 @@
-name: 'Even Action'
-description: 'Test Action'
+name: 'Hello Action'
+description: 'Greet someone and record the time'
 branding:
   icon: 'award'  
   color: 'green'
 inputs:
   who-to-greet: # id of input
-    description: 'echo info'
+    description: 'who to greet'
     required: true
-    default: 'even'
+    default: 'wxdlong'
 outputs:
   time:
-    description: 'echo time'
+    description: 'The time we greeted you'
 runs:
   using: 'docker'
   image: 'Dockerfile'

@@ -8,9 +8,9 @@ jobs:
     steps:
     - name: Hello action step
       id: hello
-      uses: songyanping/even-action1@master
+      uses: wxdlong/hello-action@v7
       with:
-        who-to-greet: 'Even'
+        who-to-greet: 'wxdlong'
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
