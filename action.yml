@@ -20,4 +20,4 @@ runs:
   steps:
     - name: Run Script
       shell: bash
-      run: $GITHUB_ACTION_PATH/entrypoint.sh song
+      run: ls $GITHUB_ACTION_PATH/entrypoint.sh
