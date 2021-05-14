@@ -12,7 +12,12 @@ outputs:
   time:
     description: 'The time we greeted you'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.who-to-greet }}
+#  using: 'docker'
+#  image: 'Dockerfile'
+#  args:
+#    - ${{ inputs.who-to-greet }}
+  using: 'composite'
+  steps:
+    - name: Run Script
+      shell: bash
+      run: $GITHUB_ACTION_PATH/entrypoint.sh song
