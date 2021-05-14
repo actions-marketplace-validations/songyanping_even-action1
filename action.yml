@@ -18,6 +18,8 @@ runs:
 #    - ${{ inputs.who-to-greet }}
   using: 'composite'
   steps:
+    - name: Checkout
+      uses: actions/checkout@v2
     - name: Run Script
       shell: bash
       run: $GITHUB_ACTION_PATH/entrypoint.sh song
