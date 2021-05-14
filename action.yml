@@ -1,0 +1,18 @@
+name: 'Even Action'
+description: 'Test Action'
+branding:
+  icon: 'award'  
+  color: 'green'
+inputs:
+  who-to-greet: # id of input
+    description: 'echo info'
+    required: true
+    default: 'even'
+outputs:
+  time:
+    description: 'echo time'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
