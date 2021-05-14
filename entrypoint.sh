@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-echo "Hello Hello Hello $1"
+echo "Hi，github actions $1"

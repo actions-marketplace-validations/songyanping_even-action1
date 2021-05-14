@@ -1,4 +1,4 @@
-name: 'Hello Action'
+name: 'Even Action1'
 description: 'Greet someone and record the time'
 branding:
   icon: 'award'  
@@ -7,7 +7,7 @@ inputs:
   who-to-greet: # id of input
     description: 'who to greet'
     required: true
-    default: 'wxdlong'
+    default: 'xxx'
 outputs:
   time:
     description: 'The time we greeted you'
