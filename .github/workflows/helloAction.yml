@@ -1,4 +1,4 @@
-name: Hello Action
+name: Even Action1
 on: [push]
 
 jobs:
